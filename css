@@ -1,0 +1,248 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Header section with logo */
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 200px;
+  filter: brightness(0) invert(1); /* Make the logo white */
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  background: url("header-image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-title .welcome-to {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title .rooster-grin {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Hero Button */
+.hero-button {
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Add some spacing below the text */
+}
+
+/* Orange Button */
+.orange-button {
+  background-color: orange;
+}
+
+/* Content Section */
+.content-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.content-section img {
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+.reversed-content {
+  flex-direction: row-reverse;
+}
+
+.header-title {
+  color: purple;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.small-text {
+  font-size: 9px;
+}
+
+.link-text {
+  color: purple;
+  font-size: 11px;
+}
+
+/* Banner Section */
+.banner-section {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text and Icons Section */
+.text-icons-section {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #d1cbcb;
+  color: white;
+}
+
+.text-icons-section .text-content {
+  flex: 1;
+}
+
+.large-header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-icons-section .icons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.text-icons-section .icon-box {
+  text-align: center;
+  width: 45%;
+  margin: 2.5%;
+}
+
+.text-icons-section .icon-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.text-icons-section .icon-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.testimonial-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.review-stars {
+  color: gold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.review-name {
+  font-size: 18px; /* Increased size */
+  color: #333;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #6a1b9a;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-text {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
